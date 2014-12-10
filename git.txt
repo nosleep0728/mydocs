@@ -2,4 +2,6 @@
 
 # https에서 비밀번호를 스킵하려고 할 때.
 
-git config --global credential.helper cache
+git config credential.helper store
+
+git config --global credential.helper store

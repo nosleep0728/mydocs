@@ -1,0 +1,8 @@
+
+
+<< 1씩 증가시키면서 업데이트 하기 >>
+set @no := 0;
+update tn_traing_senario set indict_ordr = (@no := @no+1)
+
+<< @의 의미 >>
+mysql 에서 @는 변수를 의미한다. 

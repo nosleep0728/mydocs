@@ -1,0 +1,19 @@
+
+- slf4j 는 로깅 구현체라기 보다는 Logging Facade입니다. 
+ . 일명 창구 일원화 패턴인데, slf4j의 api를 사용하면, 구현체의 종류와 상관없이
+   일관된 로깅 코드를 사용가능함. 
+
+- third party 라이브러리가 log4j를 사용하는 경우 주의사항.
+
+- SLF4J
+ . slf4j의 핵심은 다양한 Logger구현체들을 추상화를 통해서 언제든지 교체 가능하도록 
+   하는 것. 즉 Logger Facade라이브러리입니다. 
+- 문제는 외부 라이브러리가 직접 구현체 Logger를 호출하는 경우.
+ . 이러한 이슈를 해결하기 위해서 extend라이브러리 제공함. 
+ . log4j-over-slf4j.jar를 압축해제하면 log4j.jar와 동일한 패키지, 클래스가 존재함. 
+   즉, 패키지, 클래스를 동일하게 해서 구현체 클래스를 fake함. 
+   
+- resultset출력을 위해서는 mapper를 trace로 설정해야 함. 
+
+
+

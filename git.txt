@@ -6,7 +6,10 @@ git config credential.helper store
 
 git config --global credential.helper store
 
+<< git 되돌리기 >>
+git reset --hard   : 현재 변경된 내용을 되돌림.
 
+<< 한글설정 >>
 msysgit Git Bash 한글 입출력 문제
 - 한글 입출력이 ??? 이런식이라면, 홈디렉토리에서 .inputrc
   파일을 생성하고, 아래와 같이 입력합니다. 

@@ -1,0 +1,10 @@
+
+<< 스트링을 오브젝트로 변환 >>
+- JSON 과 Map 또는 Value Object로 변환 가능함. 
+- ObjectMapper : jackson 라이브러리.
+
+		ObjectMapper mapper = new ObjectMapper();
+		RouteParam rp=mapper.readValue(params, new TypeReference<RouteParam>() {});
+		logger.debug("{}", rp);
+
+
